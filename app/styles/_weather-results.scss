@@ -1,0 +1,27 @@
+h1{
+  text-align: center;
+}
+
+.cities-found {
+  background-color: none;
+}
+
+.current-forecast {
+  background-color: rgb(238, 238, 238);
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 200px;
+}
+
+dl.weather-forecast {
+  display: inline-block;
+  padding: 10px;
+  background-color: rgb(238, 238, 238);
+  margin: 10px;
+  min-width: 200px;
+  border-radius: 5px;
+
+  dt{
+    font-size: 15px;
+  }
+}
