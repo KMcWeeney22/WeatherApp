@@ -15,6 +15,16 @@
          cityID: $routeParams.cityID
      });
 
-
+     $scope.forecastIcon = function(weatherPrediction){
+       var currentWeather = "sun-icon.png";
+      if (weatherPrediction === "Sunny"){
+        currentWeather = "sun-icon.png";
+      } else if (weatherPrediction === "Rain"){
+        currentWeather = "WeatherRain.png";
+      } else if (weatherPrediction === "Snow"){
+        currentWeather = "snow-icon.png";
+      }
+       return currentWeather;
+    };
 
    });
