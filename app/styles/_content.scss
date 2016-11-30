@@ -14,6 +14,11 @@ body {
 }
 .jumbotron{
   background-color: rgba(255, 255, 255, .8);
+
+  .cities-found {
+    display: inline-block;
+    margin: 20px;
+  }
 }
 
 
@@ -30,5 +35,13 @@ body {
     a {
       margin: 5px;
     }
+  }
+}
+
+.footer {
+  p {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
   }
 }
