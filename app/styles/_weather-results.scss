@@ -6,16 +6,34 @@ h1{
   background-color: none;
 }
 
+// current.html styles
 .current-forecast {
   background-color: rgb(238, 238, 238);
   padding: 10px;
   border-radius: 5px;
   max-width: 200px;
 }
+
+.buttons {
+  .save-message{
+    font-size: 20px;
+    float: right;
+    color: transparent;
+    text-indent: -450px;
+  }
+}
+
+.buttons:hover {
+  .save-message {
+    color: white;
+  }
+}
+// all dl tags displaying weather information. transition increase size
 dl:hover {
   transform: scale(1.1);
 }
 
+// forecast.html
 dl.weather-forecast {
   display: inline-block;
   padding: 10px;
