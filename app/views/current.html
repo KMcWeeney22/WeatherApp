@@ -3,6 +3,7 @@
 
   <dl class="current-forecast">
       <dt>Currently</dt>
+      <dd class="weatherIcons"><img ng-src='images/{{forecastIcon(current.weather[0].main)}}'></dd>
       <dd>{{currentWeather.weather[0].main}}</dd>
       <dd>{{currentWeather.weather[0].description}}</dd>
       <dt>Temperature</dt>
@@ -14,9 +15,9 @@
   </dl>
 
   <div class="buttons">
-  <!-- <p class="save-message">(Save this city for quicker access on the homescreen!)</p> -->
+  <p class="save-message">(Save this city for quicker access on the homescreen!)</p>
+  <p><button class="btn btn-md btn-primary save-btn" ng-click="saveCity(currentWeather)" onclick="ga('send', 'event', 'City-Weather', 'Save-City', 'Complete-Saved-City');">Save City</button></p>
   <p><a ng-href="#/forecast/{{cityID}}" class="btn btn-lg btn-primary forecast-btn">View 7-day Forecast</a></p>
-  <p><button class="btn btn-sm btn-primary save-btn" ng-click="saveCity(currentWeather)" onclick="ga('send', 'event', 'City-Weather', 'Save-City', 'Complete-Saved-City');">Save City</button></p>
   </div>
 
   <div ng-messages="citySaved">
